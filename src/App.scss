@@ -1,0 +1,55 @@
+@import 'variables';
+@import 'blaupause';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navigation {
+    background-color: $main-color-dark;
+    padding: 2%;
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+      /*   padding-top: 20px; */
+    li a {
+        text-decoration: none;
+        color: $main-color-white;
+    }
+  }
+}
+
+/* -----Footer-------- */
+.footer {
+  background-color: $main-color-dark;
+  color: $main-color-white;
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid $main-color-white;
+  font-size: .7rem;
+  padding: 3%;
+}
+.contact th {
+  color: $main-color;
+  text-align: left;
+}
+.contact td {
+  font-size: .5rem;
+  padding-right: 70px;
+}
+.footerImg {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .woman img{
+    width: 40%;
+    padding-left: 20%;
+  }
+  .socialMedia a img {
+    width: 20%;
+  }
+}

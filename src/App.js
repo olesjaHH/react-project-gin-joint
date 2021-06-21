@@ -1,5 +1,6 @@
 
-import './App.css';
+/* import './App.css'; */
+import './App.scss';
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -8,8 +9,11 @@ import {
   Link
 } from "react-router-dom";
 import Home from './components/Home';
-import Users from './components/Users';
-import About from './components/About';
+import Entertainment from './components/Entertainment'
+import Shop from './components/Shop';
+import Events from './components/Events';
+import Contact from './components/Contact';
+import Footer from './components/Footer'
 
 import Nav from './components/Nav';
 
@@ -19,22 +23,21 @@ function App() {
     <div>
       <Nav />
 
-      {/* A <Switch> looks through its children <Route>s and
-          renders the first one that matches the current URL. */}
       <Switch>
-        {/* Mögliche Probleme: Reihenfolge!*/}
         <Route path="/" exact>
-          {/* Mit exact sagen wir es muss genau so sein! */}
           <Home />
         </Route>
-        <Route path="/about">
-          <About />
+        <Route path="/entertainment">
+          <Entertainment />
         </Route>
-        <Route path="/users">
-          <Users />
+        <Route path="/shop">
+          <Shop />
+        </Route>
+        <Route path="/events">
+          <Events />
         </Route>
         <Route path="/contact">
-          <div>Contact</div>
+          <Contact />
         </Route>
 
 
@@ -45,9 +48,7 @@ function App() {
         </Route>
       </Switch>
 
-      <footer>
-        &copy;
-      </footer>
+      <Footer />
     </div>
   </Router>
   );

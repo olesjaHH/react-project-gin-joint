@@ -4,18 +4,22 @@ import {
 
 const Nav = () => {
     return (
-        <nav>
+        <nav className="navigation">
             <ul>
                 <li>
-                    {/* das ist quasi unser a tag mit href
-              es wurde nur in Link to geändert */}
-                    <Link to="/">Home</Link>
+                    <Link to="/">HOME</Link>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                    <Link to="/entertainment">ENTERTAINMENT</Link>
                 </li>
                 <li>
-                    <Link to="/users">Users</Link>
+                    <Link to="/shop">SHOP</Link>
+                </li>
+                <li>
+                    <Link to="/events">EVENTS</Link>
+                </li>
+                <li>
+                    <Link to="/contact">CONTACT</Link>
                 </li>
             </ul>
         </nav>

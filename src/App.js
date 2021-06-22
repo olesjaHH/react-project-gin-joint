@@ -20,7 +20,7 @@ import Nav from './components/Nav';
 function App() {
   return (
     <Router>
-    <div>
+    <main>
       <Nav />
 
       <Switch>
@@ -49,7 +49,7 @@ function App() {
       </Switch>
 
       <Footer />
-    </div>
+    </main>
   </Router>
   );
 }

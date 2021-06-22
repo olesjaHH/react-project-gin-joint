@@ -1,13 +1,21 @@
 import {
     Link
 } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-const Nav = () => {
+/* const Nav = () => {
     return (
-        <nav className="navigation">
+     <nav className="navigation">
             <ul>
                 <li>
-                    <Link to="/">HOME</Link>
+                    <NavLink to="/" className="main-nav"
+                    activeClassName="main-nav-active">HOME 
+                    </NavLink>
+                   {/*  <Link 
+                    activeStyle={{color: 'red'}}
+                    to="/">HOME 
+                    
+                    </Link> 
                 </li>
                 <li>
                     <Link to="/entertainment">ENTERTAINMENT</Link>
@@ -22,8 +30,8 @@ const Nav = () => {
                     <Link to="/contact">CONTACT</Link>
                 </li>
             </ul>
-        </nav>
+        </nav> 
     );
 }
 
-export default Nav;
+export default Nav; */

@@ -41,7 +41,7 @@ body {
     } 
   }
 }
-input {
+input[type=button] {
   @extend%button_style
 }
 .pop-item {
@@ -132,15 +132,134 @@ input {
         h4 {
           font-weight: 300;
           font-size: .9rem;
+          margin-left: 20%;
         }
         p {
           font-weight: 300;
           font-size: .4rem;
           padding-top: 7%;
+          margin-left: 20%;
         }
       }
     }
     
+  }
+}
+
+/* -----Shop----------- */
+.open-img {
+  background: url(./img/ShopHeader.png) center/ cover no-repeat;
+  height: 70vh;
+}
+.coming-soon {
+  height: 70vh;
+  background: $main-color;
+  text-align: center;
+  h1 {
+    font-size: 3rem;
+    color: $main-color-dark;
+    font-weight: 400;
+    padding-top: 15%;
+    span {
+      display: block;
+      font-weight: bold;
+    }
+  }
+}
+/* -----Contact-------- */
+.flex-article {
+  display: flex;
+  .experience {
+    width: 50%;
+    background: $main-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    h4 {
+      font-size: .8rem;
+      font-weight: 300;
+      color: $main-color-dark;
+    }
+    h1 {
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 1.7rem;
+      line-height: 1.5rem;
+      padding: 4% 0;
+      span {
+        display: block;
+      }
+    }
+    p {
+      font-size: .5rem;
+      font-weight: 300;
+      color: $main-color-dark;
+      width: 60%;
+    }
+  }
+  .pic-bar {
+    background: url(./img/ContactRectangle.png) center/ cover no-repeat;
+    height: 50vh;
+    width: 50%;
+  }
+}
+.map {
+  background: url(./img/ContactRectangle2.png) center/ cover no-repeat;
+  height: 60vh;
+  h1 {
+    background: $main-color;
+    width: 250px;
+    padding: 3%;
+    position: relative;
+    top: 40%;
+    left: 30%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+.contact-input {
+  display: flex;
+  background: $main-color;
+  padding: 7%;
+  article {
+    width: 50%;
+    h3 {
+      font-weight: 300;
+      font-size: .6rem;
+      color: $main-color-dark;
+    }
+    p {
+      font-weight: 300;
+      line-height: 1rem;
+      padding: 3% 0 7% 0;
+    }
+    table tr th {
+      font-weight: 400;
+      font-size: .6rem;
+      color: $main-color-dark;
+      padding-bottom: 5%;
+    } td {
+      font-size: .5rem;
+      font-weight: 300;
+    }
+  }
+  form {
+    width: 50%;
+    input {
+      @extend%input_style
+    }
+    textarea {
+      font-size: .5rem;
+      padding: 1.5%;
+      outline-style: none;
+    }
+    input[type=button] {
+      background: $main-color-dark;
+      color: $main-color-white;
+      width: 60px;
+      font-size: .4rem;
+    }
   }
 }
 /* -----Footer-------- */
@@ -178,9 +297,10 @@ input {
   margin: 3% 0;
   .woman img{
     width: 40%;
-    margin-left: 40%;
+    margin-left: 50%;
   }
   .socialMedia a img {
     width: 20%;
+    margin-right: 15%;
   }
 }

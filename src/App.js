@@ -2,11 +2,11 @@
 /* import './App.css'; */
 import './App.scss';
 import React from "react";
+
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Home from './components/Home';
 import Entertainment from './components/Entertainment'
@@ -14,15 +14,42 @@ import Shop from './components/Shop';
 import Events from './components/Events';
 import Contact from './components/Contact';
 import Footer from './components/Footer'
-
-import Nav from './components/Nav';
+import { NavLink } from "react-router-dom";
+/* import Nav from './components/Nav'; */
 
 function App() {
   return (
     <Router>
     <main>
-      <Nav />
-
+    <nav className="navigation">
+            <ul>
+                <li>
+                    <NavLink className="main-nav"
+                    activeStyle={{ color: '#BB7043'}} to="/" exact>HOME 
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink className="main-nav"
+                    activeStyle={{ color: '#BB7043'}} to="/entertainment">ENTERTAINMENT
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink className="main-nav"
+                    activeStyle={{ color: '#BB7043'}} to="/shop">SHOP
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink className="main-nav"
+                    activeStyle={{ color: '#BB7043'}} to="/events">EVENTS
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink className="main-nav"
+                    activeStyle={{ color: '#BB7043'}} to="/contact">CONTACT
+                    </NavLink>
+                </li>
+            </ul>
+        </nav>
       <Switch>
         <Route path="/" exact>
           <Home />

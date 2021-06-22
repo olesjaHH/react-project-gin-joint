@@ -66,13 +66,6 @@ function App() {
         <Route path="/contact">
           <Contact />
         </Route>
-
-
-        {/* 404 Component muss ganz ans Ende des Switches */}
-        {/* <Route> */}
-        <Route path="*">
-          <h1>404</h1>
-        </Route>
       </Switch>
 
       <Footer />

@@ -40,8 +40,8 @@ const Footer = () => {
                     <img src="./img/Footer Illustration.png" alt="" />
                     </div>
                 <div className="socialMedia">
-                    <a href="#"> <img src="./img/Facebook.png" alt="" /></a>
-                    <a href="#"> <img src="./img/Instagram.png" alt="" /></a>
+                    <a href=""> <img src="./img/Facebook.png" alt="" /></a>
+                    <a href=""> <img src="./img/Instagram.png" alt="" /></a>
                 </div>
             </section>
         </footer>

@@ -49,7 +49,7 @@ const Contact = () => {
                 <form>
                     <input type="text" name="name" id="name" placeholder="Name" /> <br />
                     <input type="email" name="mail" id="mail" placeholder="Email Address" /> <br />
-                    <input type="tel" name="mobile" id="mobile" placeholder="Mobile" placeholder="Mobile" /> <br />
+                    <input type="tel" name="mobile" id="mobile" placeholder="Mobile" /> <br />
                     <textarea name="message" id="message" cols="58" rows="7" placeholder="Message"></textarea> <br />
                     <input type="button" value="Submit" />
                 </form>
